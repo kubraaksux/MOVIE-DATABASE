@@ -36,18 +36,24 @@ Make sure you have the following tools and dependencies installed on your system
 #### Clone the repository
 git clone <repository_url>
 
-#### Set up MySQL database configurations in application.properties
+#### Start up a mysql server on localhost:3306 with username and password root.
+
+#### Execute createTables.sql
 
 ### Backend (Java Spring)
+Make sure that the Java version is at least Java 19
 
 #### Start MySQL server (command may vary based on your system)
 brew services start mysql
 
 #### Navigate to the directory
 
-#### Build the project and run the server
+#### Compile project using ./gradlew bootRun
 - ./gradlew build
 - ./gradlew bootRun
+
+### Run
+Navigate to http://localhost:8080/
 
 
 
